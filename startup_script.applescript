@@ -18,13 +18,6 @@ on run {input, parameters}
 			launch session "Default Session"
 			tell the last session
 				write text "cd " & projectFolder
-				write text "livereload"
-				set the name to projectName & ": Livereload"
-			end tell
-
-			launch session "Default Session"
-			tell the last session
-				write text "cd " & projectFolder
 				write text "source env/bin/activate"
 				write text "gitx"
 				write text "clear"
