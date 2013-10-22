@@ -10,7 +10,7 @@ on run {input, parameters}
 		tell the first terminal
 			tell the last session
 				write text "cd " & projectFolder
-				write text "source env/bin/activate"
+				write text "source .env/bin/activate"
 				write text "./manage.py runserver 0.0.0.0:8000"
 				set the name to projectName & ": Runserver"
 			end tell
@@ -18,7 +18,7 @@ on run {input, parameters}
 			launch session "Default Session"
 			tell the last session
 				write text "cd " & projectFolder
-				write text "source env/bin/activate"
+				write text "source .env/bin/activate"
 				write text "gitx"
 				write text "clear"
 				set the name to projectName & ": Shell"
