@@ -2,7 +2,7 @@ on run {input, parameters}
 	set projectName to "ProjectName"
 	set projectSlug to "project_slug"
 	set projectUrl to "http://localhost:8000/"
-	set projectBoard to "https://trello.com/board/sampleboard/xxxxxxxxxx"
+	set projectBoard to "https://trello.com/b/xxxxxxxx/sampleboard"
 
 	set projectFolder to "~/Documents/Work/" & projectName &  "/" & projectSlug & ".prj/"
 
